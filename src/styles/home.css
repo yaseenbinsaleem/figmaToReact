@@ -1,0 +1,146 @@
+body, html {
+    background-color: #0E0E0E;
+    margin: 0;
+    padding: 0;
+    font-family: General-sans;
+}
+
+@font-face {
+    font-family: General-sans;
+    src: url('../assets/fonts/OTF/GeneralSans-Medium.otf');
+}
+
+@font-face {
+    font-family: General-sans-light;
+    src: url('../assets/fonts/OTF/GeneralSans-Light.otf');
+}
+
+header {
+    margin-top: 40px;
+}
+
+.navbar {
+
+    display: flex;
+    background-color: #2F2F2F;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 16px;
+    height: 70px;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 72px;
+
+}
+
+.navbar .navbar-right a {
+    text-decoration: none;
+    color: white;
+    gap: 72px;
+
+}
+
+.navbar .navbar-right li:nth-child(2) {
+
+    background: linear-gradient(85.79deg, #6D77B0 3.1%, #9DA6CE 100%);
+    border-radius: 8px;
+    width: 180px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.navbar .navbar-left img {
+    width: 169px;
+    height: 44px;
+    margin: 18px 0;
+    margin-left: 20px;
+}
+
+.hero-section {
+    display: flex;
+    margin: 0 auto;
+    max-width: 970px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .hs-right{
+    max-width: 600px;
+    height: 561px;
+    margin-top: 48px;
+}
+.hero-section .hs-left .heading{
+    max-width: 511px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 80px;
+    margin-bottom: 50px;
+    
+}
+
+.hero-section .hs-left{
+    margin-top: 160px;
+    
+}
+.hero-section .hs-left .heading  .white {
+    color: #ffff;
+}
+
+.hero-section .hs-left .heading  .blue {
+    color: #9DA6CE;
+}
+
+.hero-section .hs-left .h4 {
+   
+    color: white;
+font-family: General-sans-light;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 163px;
+}
+
+.hero-section .hs-left .h6 {
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(217, 217, 217, 0.5);
+    font-family: General-sans-light;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .hero-section .hs-right img{
+        height: 500px;
+        width: 400px;
+        
+    }
+    .hero-section .hs-left{
+        margin-top: 0px;
+    }
+    .navbar .navbar-right{
+        gap: 0px;
+    }
+    .navbar .navbar-right li:nth-child(2) {
+        background: none;
+    }
+
+  }
